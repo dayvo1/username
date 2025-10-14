@@ -1,13 +1,13 @@
 # README for Username Validation Script
 
 ## Author Information
-- **Name:** [Your Full Name]
-- **Course:** [Course Number and Name]
+- **Name:** David Gonzalez
+- **Course:** CPSC-298-01  Introduction to *Nix
 - **Assignment:** Username Validation
-- **Date:** [Date of Completion]
+- **Date:** 10-13-2025
 
 ## Program Description
-[Write 2-3 sentences in your own words describing what this script does and its purpose. Explain the problem it solves and how it works at a high level.]
+This script validates usernames. It solves the problem of users inputing the wrong username format. The script reads usernames from user input or a file and uses regular expressions to verify each one.
 
 ## Username Requirements
 This script validates usernames according to the following rules:
@@ -33,6 +33,9 @@ To test with the provided input file:
 - The meaning of the `-E` and `-v` flags
 - The redirect `> /dev/null 2>&1`
 
+The script uses a while true loop to prompt the user for a username until a valid one is entered. It validates each input using the grep command with the -E flag for extended regular expressions. It also checks against the pattern ^[a-z][a-z0-9_]{2,11}$. The redirect > /dev/null 2>&1 silences grep's output so only the script's custom validation messages are displayed to the user.
+
+
 ## Regular Expression Pattern
 The validation uses the following regular expression pattern:
 ```
@@ -46,8 +49,11 @@ This pattern ensures that:
 ## Testing Results
 [Describe your testing process and results. Include:]
 - Example valid usernames you tested (at least two)
+dgonzalez, test123
 - Example invalid usernames and why they fail (at least two)
+Test123, test-123
 - How you used the username-input file to test
+./username.sh < username-input
 
 ## Challenges and Solutions
 [Optional: Describe any challenges you encountered while creating this script and how you solved them. This could include debugging issues, understanding regular expressions, or Git workflow problems.]
