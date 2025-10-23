@@ -3,7 +3,7 @@
 ## Author Information
 - **Name:** David Gonzalez
 - **Course:** CPSC-298-01  Introduction to *Nix
-- **Assignment:** Username Validation
+- **Project:** Username Validation using Jenkins
 - **Date:** 10-13-2025
 
 ## Program Description
@@ -57,9 +57,10 @@ Test123, test-123
 
 ## Challenges and Solutions
 [Optional: Describe any challenges you encountered while creating this script and how you solved them. This could include debugging issues, understanding regular expressions, or Git workflow problems.]
+- I didn't encounter any challenges.
 
 ## Resources
 [List any resources you used (class slides, ChatGPT, etc.). Please refer to the course syllabus for more details on citations.]
-
+- class slides
 ## License
 This project is part of coursework for Chapman University and is intended for educational purposes.
